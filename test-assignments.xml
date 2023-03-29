@@ -30,4 +30,9 @@
         <Deadline>5</Deadline>
         <Startline>5</Startline>
     </tema>
+    <tema ID="10">
+        <Descriere>assignment</Descriere>
+        <Deadline>10</Deadline>
+        <Startline>5</Startline>
+    </tema>
 </Entitati>
