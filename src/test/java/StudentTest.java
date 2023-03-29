@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class StudentTest {
     private Service service;
-    private String studentContents ="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+    private final String studentContents ="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
             "<Entitati>\n" +
             "    <student ID=\"1\">\n" +
             "        <Nume>numenou</Nume>\n" +
