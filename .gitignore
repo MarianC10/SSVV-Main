@@ -14,8 +14,3 @@
 # Maven
 log/
 target/
-
-# Tests
-./test-assignments.xml
-./test-grades.xml
-./test-students.xml
