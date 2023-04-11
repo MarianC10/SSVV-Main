@@ -1,3 +1,4 @@
+import domain.Tema;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -15,6 +16,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class AssignmentTest {
+    private TemaXMLRepository assignmentRepository;
     private Service service;
     private final String assignmentContents = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
             "<Entitati>\n" +
@@ -70,13 +72,13 @@ public class AssignmentTest {
         }
 
         var studentRepository = new StudentXMLRepository(studentValidator, "test-students.xml");
-        var assignmentRepository = new TemaXMLRepository(assignmentValidator, "test-assignments.xml");
+        assignmentRepository = new TemaXMLRepository(assignmentValidator, "test-assignments.xml");
         var gradeRepository = new NotaXMLRepository(gradeValidator, "test-grades.xml");
         service = new Service(studentRepository, assignmentRepository, gradeRepository);
     }
 
     @Test
-    public void tc_1_Path1True() {
+    public void tc_1_Service_Path1False() {
         // Arrange
         var id = "10";
         var description = "assignment";
@@ -87,11 +89,11 @@ public class AssignmentTest {
         var result = service.saveTema(id, description, deadline, startWeek);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
-    public void tc_2_Path2False() {
+    public void tc_2_Service_Path2True() {
         // Arrange
         var id = "10";
         var description = "assignment";
@@ -102,7 +104,39 @@ public class AssignmentTest {
         var result = service.saveTema(id, description, deadline, startWeek);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
+    }
+
+    @Test
+    public void tc_3_Repository_Path1Persist() {
+        // Arrange
+        var id = "10";
+        var description = "assignment";
+        var deadline = 3;
+        var startWeek = 5;
+        var assignment = new Tema(id, description, deadline, startWeek);
+
+        // Act
+        var result = assignmentRepository.save(assignment);
+
+        // Assert
+        Assert.assertEquals(assignment, result);
+    }
+
+    @Test
+    public void tc_4_Repository_Path2DoNotPersist() {
+        // Arrange
+        var id = "10";
+        var description = "assignment";
+        var deadline = 10;
+        var startWeek = 5;
+        var assignment = new Tema(id, description, deadline, startWeek);
+
+        // Act
+        var result = assignmentRepository.save(assignment);
+
+        // Assert
+        Assert.assertNull(result);
     }
 
     @After

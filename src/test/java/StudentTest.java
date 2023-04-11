@@ -75,7 +75,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @Test
@@ -89,7 +89,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -103,7 +103,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @Test
@@ -117,7 +117,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -131,7 +131,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -145,7 +145,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -159,7 +159,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -173,7 +173,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @Test
@@ -187,7 +187,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @Test
@@ -201,7 +201,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -215,7 +215,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -229,7 +229,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -243,7 +243,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @Test
@@ -257,7 +257,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @Test
@@ -271,7 +271,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @Test
@@ -285,7 +285,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @Test
@@ -299,7 +299,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -313,7 +313,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -327,7 +327,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -341,7 +341,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @Test
@@ -355,7 +355,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -369,7 +369,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(0, result);
     }
 
     @Test
@@ -383,7 +383,7 @@ public class StudentTest {
         var result = service.saveStudent(id, name, group);
 
         // Assert
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(1, result);
     }
 
     @After
