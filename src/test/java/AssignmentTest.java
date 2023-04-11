@@ -108,7 +108,7 @@ public class AssignmentTest {
     }
 
     @Test
-    public void tc_3_Repository_Path1Persist() {
+    public void tc_3_Repository_Path1DoNotPersist() {
         // Arrange
         var id = "10";
         var description = "assignment";
@@ -124,7 +124,7 @@ public class AssignmentTest {
     }
 
     @Test
-    public void tc_4_Repository_Path2DoNotPersist() {
+    public void tc_4_Repository_Path2Persist() {
         // Arrange
         var id = "10";
         var description = "assignment";
