@@ -78,7 +78,7 @@ public class AssignmentTest {
     }
 
     @Test
-    public void tc_1_Service_Path1False() {
+    public void tc_1_Service_Path2() {
         // Arrange
         var id = "10";
         var description = "assignment";
@@ -93,7 +93,7 @@ public class AssignmentTest {
     }
 
     @Test
-    public void tc_2_Service_Path2True() {
+    public void tc_2_Service_Path1() {
         // Arrange
         var id = "10";
         var description = "assignment";
