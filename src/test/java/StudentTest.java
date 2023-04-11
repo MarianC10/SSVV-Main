@@ -61,7 +61,6 @@ public class StudentTest {
         var assignmentRepository = new TemaXMLRepository(assignmentValidator, "test-assignments.xml");
         var gradeRepository = new NotaXMLRepository(gradeValidator, "test-grades.xml");
         service = new Service(studentRepository, assignmentRepository, gradeRepository);
-
     }
 
     @Test
