@@ -13,7 +13,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class IntegrationTest {
+public class BigBangIntegrationTest {
     private Service service;
     private final String studentContents ="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
             "<Entitati>\n" +
