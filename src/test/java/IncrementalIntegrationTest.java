@@ -42,7 +42,7 @@ public class IncrementalIntegrationTest {
     }
 
     @Test
-    public void itc_1_AddValidStudent(){
+    public void tc_i1_AddValidStudent(){
         // Arrange
         var id = "10";
         var name= "name";
@@ -59,7 +59,7 @@ public class IncrementalIntegrationTest {
     }
 
     @Test
-    public void itc_2_AddValidStudentAndAssignment() {
+    public void tc_i2_AddValidStudentAndAssignment() {
         // Arrange
         var studId = "10";
         var name= "name";
@@ -86,7 +86,7 @@ public class IncrementalIntegrationTest {
     }
 
     @Test
-    public void itc_3_AddValidEntities() {
+    public void tc_i3_AddValidEntities() {
         // Arrange
         var studId = "10";
         var name= "name";
