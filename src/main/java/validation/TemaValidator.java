@@ -9,11 +9,14 @@ public class TemaValidator implements Validator<Tema> {
         if (tema.getDescriere() == null || tema.getDescriere().equals("")) {
             throw new ValidationException("Descriere invalida! \n");
         }
-        if (tema.getDeadline() < 1 || tema.getDeadline() > 14 || tema.getDeadline() < tema.getStartline()) {
+        if (tema.getDeadline() < 1 || tema.getDeadline() > 14) {
             throw new ValidationException("Deadline invalid! \n");
         }
-        if (tema.getStartline() < 1 || tema.getStartline() > 14 || tema.getStartline() > tema.getDeadline()) {
+        if (tema.getStartline() < 1 || tema.getStartline() > 14) {
             throw new ValidationException("Data de primire invalida! \n");
+        }
+        if(tema.getStartline() > tema.getDeadline()){
+            throw new ValidationException("Data de primire este mai mare decat data de predare! \n");
         }
     }
 }

@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Entitati>
+    <student ID="1">
+        <Nume>numenou</Nume>
+        <Grupa>222</Grupa>
+    </student>
+    <student ID="2">
+        <Nume>Maria</Nume>
+        <Grupa>222</Grupa>
+    </student>
+    <student ID="3">
+        <Nume>John</Nume>
+        <Grupa>231</Grupa>
+    </student>
+    <student ID="4">
+        <Nume>Ion</Nume>
+        <Grupa>227</Grupa>
+    </student>
+    <student ID="5">
+        <Nume>student</Nume>
+        <Grupa>932</Grupa>
+    </student>
+    <student ID="16">
+        <Nume>test</Nume>
+        <Grupa>111</Grupa>
+    </student>
 </Entitati>
